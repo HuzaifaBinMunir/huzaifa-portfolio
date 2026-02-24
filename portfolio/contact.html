@@ -54,9 +54,10 @@
         <p>(This demo form shows UI — later we can connect it.)</p>
       </div>
 
-      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <!-- Required hidden input -->
         <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="redirect" value="thank-you.html" />
 
         <!-- Honeypot anti-spam field -->
         <p style="display:none;">
