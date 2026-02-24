@@ -14,3 +14,16 @@ document.querySelectorAll("[data-nav-link]").forEach((a) => {
   const href = a.getAttribute("href");
   if (href === current) a.classList.add("active");
 });
+
+document.querySelectorAll(".card.clickable").forEach(card => {
+  card.addEventListener("click", (e) => {
+
+    // Prevent clicking button from triggering full card
+    if (e.target.tagName.toLowerCase() === "a") return;
+
+    const url = card.dataset.url;
+    if (url) {
+      window.open(url, "_blank");
+    }
+  });
+});
