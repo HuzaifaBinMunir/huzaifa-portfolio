@@ -1,118 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Huzaifa</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <span class="brand-badge" aria-hidden="true"></span>
-      <span>Huzaifa</span>
-    </a>
-
-    <button class="menu-btn" data-menu-btn aria-label="Toggle menu">Menu</button>
-
-    <nav class="nav-links" data-nav-links aria-label="Primary">
-      <a href="index.html" data-nav-link>Home</a>
-      <a href="about.html" data-nav-link>About</a>
-      <a href="contact.html" data-nav-link>Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1 data-typewriter>Let’s build something solid.</h1>
-        <p>
-          Want help with testing, API validation, or a clean front-end delivery?
-          Send a message below.
-        </p>
-      </div>
-
-      <aside class="hero-card">
-        <h3 style="margin:0 0 10px; color:#f9fafb;">Direct</h3>
-
-        <div class="direct">
-          <div class="direct-item">
-            <span class="direct-label">Email:</span>
-            <a class="pill pill-link" href="mailto:binmunirhuzaifa@gmail.com">binmunirhuzaifa@gmail.com</a>
-          </div>
-          
-          <div class="direct-item">
-            <span class="direct-label">LinkedIn:</span>
-            <a class="pill pill-link" href="https://linkedin.com/in/huzaifa-bin-munir/" target="_blank" rel="noopener"> 
-            linkedin.com/in/huzaifa-bin-munir/
-            </a>
-          </div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">
+          <img src="assets/HuzLogo1.png" alt="Huzaifa Munir Logo" />
         </div>
-      </aside>
+        <span>Huzaifa</span>
+      </a>
 
+      <button class="menu-btn" data-menu-btn aria-label="Toggle menu">Menu</button>
+
+      <nav class="nav-links" data-nav-links aria-label="Primary">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Message</h2>
-        <p>I personally review every inquiry and respond within 24 hours.</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 data-typewriter>Let’s build something solid.</h1>
+          <p>
+            Want help with testing, API validation, or a clean front-end delivery?
+            Send a message below.
+          </p>
+        </div>
+
+        <aside class="hero-card">
+          <h3 style="margin:0 0 10px; color:#f9fafb;">Direct</h3>
+
+          <div class="direct">
+            <div class="direct-item">
+              <span class="direct-label">Email:</span>
+              <a class="pill pill-link" href="mailto:binmunirhuzaifa@gmail.com">binmunirhuzaifa@gmail.com</a>
+            </div>
+
+            <div class="direct-item">
+              <span class="direct-label">LinkedIn:</span>
+              <a class="pill pill-link" href="https://linkedin.com/in/huzaifa-bin-munir/" target="_blank"
+                rel="noopener">
+                linkedin.com/in/huzaifa-bin-munir/
+              </a>
+            </div>
+          </div>
+        </aside>
+
       </div>
+    </section>
 
-      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <!-- Required hidden input -->
-        <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="redirect" value="thank-you.html" />
-
-        <!-- Honeypot anti-spam field -->
-        <p style="display:none;">
-          <label>Don’t fill this out:
-            <input name="bot-field" />
-          </label>
-        </p>
-
-        <div class="input">
-          <label for="name">Full Name</label>
-          <input id="name" name="name" type="text" placeholder="e.g., Sarah Khan" required />
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Message</h2>
+          <p>I personally review every inquiry and respond within 24 hours.</p>
         </div>
 
-        <div class="input">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="e.g., sarah@email.com" required />
-        </div>
+        <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <!-- Required hidden input -->
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="redirect" value="thank-you.html" />
 
-        <div class="input">
-          <label for="msg">Message</label>
-          <textarea id="msg" name="message" placeholder="Write your message..." required></textarea>
-        </div>
+          <!-- Honeypot anti-spam field -->
+          <p style="display:none;">
+            <label>Don’t fill this out:
+              <input name="bot-field" />
+            </label>
+          </p>
 
-        <button class="btn primary" type="submit">
-          Send Message →
-        </button>
-      </form>
+          <div class="input">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="e.g., Sarah Khan" required />
+          </div>
 
+          <div class="input">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="e.g., sarah@email.com" required />
+          </div>
+
+          <div class="input">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">
+            Send Message →
+          </button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Huzaifa. All rights reserved.</span>
+      <span>
+        <a href="index.html">Home</a> ·
+        <a href="about.html">About</a>
+      </span>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="footer">
-  <div class="container footer-row">
-    <span>© <span id="year"></span> Huzaifa. All rights reserved.</span>
-    <span>
-      <a href="index.html">Home</a> ·
-      <a href="about.html">About</a>
-    </span>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
