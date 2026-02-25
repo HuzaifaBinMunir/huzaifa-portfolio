@@ -27,3 +27,31 @@ document.querySelectorAll(".card.clickable").forEach(card => {
     }
   });
 });
+// Typewriter effect for hero headline // 
+(function typewriterInit(){
+  const els = document.querySelectorAll("[data-typewriter]");
+  if (!els.length) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return; // keep normal text
+
+  els.forEach((el) => {
+    const fullText = (el.textContent || "").trim();
+    if (!fullText) return;
+
+    el.textContent = "";
+    el.classList.add("typewriter");
+
+    let i = 0;
+    const speed = 22; // typing speed
+
+    const tick = () => {
+      el.textContent = fullText.slice(0, i);
+      i++;
+      if (i <= fullText.length) setTimeout(tick, speed);
+      else el.classList.remove("typewriter"); // stop cursor blink if you want
+    };
+
+    setTimeout(tick, 250);
+  });
+})();
